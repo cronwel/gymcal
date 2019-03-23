@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exercise_type: MyString
+  name: MyString
+  repetition: 1
+  quality: MyString
+
+two:
+  exercise_type: MyString
+  name: MyString
+  repetition: 1
+  quality: MyString
