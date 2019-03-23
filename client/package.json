@@ -4,6 +4,9 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "@uppy/core": "^0.30.3",
+    "@uppy/dashboard": "^0.30.3",
+    "@uppy/tus": "^0.30.3",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
