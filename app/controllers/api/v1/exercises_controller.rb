@@ -1,4 +1,4 @@
-module API::V1
+module Api::V1
 class ExercisesController < ApplicationController
   before_action :set_exercise, only: [:show, :update, :destroy]
 
