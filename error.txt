@@ -1,0 +1,141 @@
+
+==> Summary
+🍺  /usr/local/Cellar/readline/8.0.0: 48 files, 1.5MB
+==> Installing postgresql@9.6
+==> Downloading https://homebrew.bintray.com/bottles/postgresql@9.6-9.6.11.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring postgresql@9.6-9.6.11.mojave.bottle.tar.gz
+==> /usr/local/Cellar/postgresql@9.6/9.6.11/bin/initdb /usr/local/var/postgresql@9.6
+==> Caveats
+If builds of PostgreSQL 9 are failing and you have version 8.x installed,
+you may need to remove the previous version first. See:
+  https://github.com/Homebrew/legacy-homebrew/issues/2510
+
+To migrate existing data from a previous major version (pre-9.0) of PostgreSQL, see:
+  https://www.postgresql.org/docs/9.6/static/upgrading.html
+
+To migrate existing data from a previous minor version (9.0-9.5) of PostgreSQL, see:
+  https://www.postgresql.org/docs/9.6/static/pgupgrade.html
+
+  You will need your previous PostgreSQL installation from brew to perform `pg_upgrade`.
+    Do not run `brew cleanup postgresql@9.6` until you have performed the migration.
+
+postgresql@9.6 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have postgresql@9.6 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find postgresql@9.6 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/postgresql@9.6/lib"
+  export CPPFLAGS="-I/usr/local/opt/postgresql@9.6/include"
+
+For pkg-config to find postgresql@9.6 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/postgresql@9.6/lib/pkgconfig"
+
+
+To have launchd start postgresql@9.6 now and restart at login:
+  brew services start postgresql@9.6
+Or, if you don't want/need a background service you can just run:
+  pg_ctl -D /usr/local/var/postgresql@9.6 start
+==> Summary
+🍺  /usr/local/Cellar/postgresql@9.6/9.6.11: 1,648 files, 20.5MB
+==> `brew cleanup` has not been run in 30 days, running now...
+Removing: /usr/local/Cellar/openssl/1.0.2j... (1,695 files, 12MB)
+Removing: /usr/local/Cellar/openssl/1.0.2l... (1,709 files, 12.2MB)
+Removing: /usr/local/Cellar/openssl/1.0.2n... (1,792 files, 12.3MB)
+Removing: /usr/local/Cellar/openssl/1.0.2p... (1,793 files, 12.3MB)
+Removing: /usr/local/Cellar/openssl/1.0.2q... (1,794 files, 12.1MB)
+Removing: /usr/local/Cellar/readline/7.0... (45 files, 2MB)
+Removing: /usr/local/Cellar/readline/7.0.1... (46 files, 2MB)
+Removing: /usr/local/Cellar/readline/7.0.3_1... (46 files, 1.5MB)
+Removing: /usr/local/Cellar/readline/7.0.5... (46 files, 1.5MB)
+Pruned 1 symbolic links and 493 directories from /usr/local
+==> Caveats
+==> openssl
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+openssl is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have openssl first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+For pkg-config to find openssl you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+==> readline
+readline is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides the BSD libedit library, which shadows libreadline.
+In order to prevent conflicts when programs look for libreadline we are
+defaulting this GNU Readline installation to keg-only.
+
+For compilers to find readline you may need to set:
+  export LDFLAGS="-L/usr/local/opt/readline/lib"
+  export CPPFLAGS="-I/usr/local/opt/readline/include"
+
+For pkg-config to find readline you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+
+==> postgresql@9.6
+If builds of PostgreSQL 9 are failing and you have version 8.x installed,
+you may need to remove the previous version first. See:
+  https://github.com/Homebrew/legacy-homebrew/issues/2510
+
+To migrate existing data from a previous major version (pre-9.0) of PostgreSQL, see:
+  https://www.postgresql.org/docs/9.6/static/upgrading.html
+
+To migrate existing data from a previous minor version (9.0-9.5) of PostgreSQL, see:
+  https://www.postgresql.org/docs/9.6/static/pgupgrade.html
+
+  You will need your previous PostgreSQL installation from brew to perform `pg_upgrade`.
+    Do not run `brew cleanup postgresql@9.6` until you have performed the migration.
+
+postgresql@9.6 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have postgresql@9.6 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find postgresql@9.6 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/postgresql@9.6/lib"
+  export CPPFLAGS="-I/usr/local/opt/postgresql@9.6/include"
+
+For pkg-config to find postgresql@9.6 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/postgresql@9.6/lib/pkgconfig"
+
+
+To have launchd start postgresql@9.6 now and restart at login:
+  brew services start postgresql@9.6
+Or, if you don't want/need a background service you can just run:
+  pg_ctl -D /usr/local/var/postgresql@9.6 start
+==> Upgrading postgresql data from 9.6 to 11...
+waiting for server to start....LOG:  database system was shut down at 2016-12-24 18:24:35 -05
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ done
+server started
+waiting for server to shut down...LOG:  received fast shutdown request
+.LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+ done
+server stopped
+==> Moving postgresql data from /usr/local/var/postgres to /usr/local/var/postgres.old...
+Error: Upgrading postgresql data from 9.6 to 11 failed!
+==> Removing empty postgresql initdb database...
+==> Moving postgresql data back from /usr/local/var/postgres.old to /usr/local/var/postgres...
+Error: Failure while executing; `/usr/local/Cellar/postgresql/11.2/bin/pg_upgrade -r -b /usr/local/Cellar/postgresql@9.6/9.6.11/bin -B /usr/local/Cellar/postgresql/11.2/bin -d /usr/local/var/postgres.old -D /usr/local/var/postgres -j 4` exited with 1.
+Nu:gymcal noelirias$ 
