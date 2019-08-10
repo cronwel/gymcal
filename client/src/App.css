@@ -1,7 +1,23 @@
-.App {
-  text-align: center;
+
+@font-face {
+  font-family: MinistryofMoron;
+  src: url('./resources/a_02_fonts/Ministry\ of\ Moron.otf');
 }
 
-.App-header {
-  font-family: Graduate;
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-image: url('./resources/a_01_images/background_1.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  text-decoration-style: none;
+}
+
+.logoStyle {
+  height: 15vh;
 }

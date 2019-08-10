@@ -6,11 +6,9 @@ class Menu extends Component {
 render() {
   return (
     <nav className="menu">
-      <ul>
-        <li>Sign In</li>
-        <li>Dashboard</li>
-        <li>Calendar</li>
-      </ul>
+        <a href="http://" target="_blank" rel="noopener noreferrer">What</a>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Details</a>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Talk</a>
     </nav>
   )
 }

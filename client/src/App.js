@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
-import WorkoutInput from './components/WorkoutInput';
 import Menu from './components/01-Menu/Menu';
-import Workout from './components/03-Workouts/Workout';
-
+import { ReactComponent as Logo } from './resources/a_01_images/gymcal_logo.svg';
+import Signup from './components/04-Frontpage/signup';
+import Credits from './components/04-Frontpage/credits';
+import Download from './components/04-Frontpage/download';
+import Tagline from './components/04-Frontpage/tagline';
 class App extends Component {
   render() {
     return (
-      <>
       <div className="App">
-        <header className="App-header">
-          GymCal
-        </header>
-      </div>
+        <Logo className="logoStyle" />
+        <Tagline />
         <Menu />
-        < WorkoutInput />
-        <Workout />
-        </>
+        <Signup />
+        <Credits />
+        <Download />
+      </div>
     );
   }
 }
