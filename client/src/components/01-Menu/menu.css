@@ -9,6 +9,7 @@
 }
 
 a {
+    grid-template-rows: 1fr 1fr 1fr;
     text-decoration: none;
     word-spacing: 2vw;
 }
