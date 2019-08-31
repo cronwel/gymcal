@@ -8,8 +8,10 @@
     "@uppy/dashboard": "^0.30.3",
     "@uppy/tus": "^0.30.3",
     "axios": "^0.18.0",
-    "npm": "^6.9.0",
+    "http-proxy-middleware": "^0.19.1",
+    "npm": "^6.10.3",
     "react": "^16.8.5",
+    "react-devise": "0.0.19",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
   },

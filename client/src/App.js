@@ -8,9 +8,16 @@ import Download from './components/04-Frontpage/download';
 import Tagline from './components/04-Frontpage/tagline';
 import axios from 'axios';
 class App extends Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      profile:[]
+    };
+  }
   componentDidMount() {
-    axios.get('/profile/')
+    axios.get('api/v1/profile/')
+      .then((response) => {return response.json()})
+      .then((data) => {this.setState({ profile: data }) });
   }
   render() {
     return (

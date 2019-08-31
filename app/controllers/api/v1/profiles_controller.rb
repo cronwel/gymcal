@@ -18,7 +18,7 @@ class API::V1::ProfilesController < ApplicationController
     @profile = Profile.new(profile_params)
 
     if @profile.save
-      render json: @profile, status: :created, location: @profile
+      render json: @profile, status: :created
     else
       render json: @profile.errors, status: :unprocessable_entity
     end

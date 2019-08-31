@@ -15,7 +15,12 @@ gem 'jbuilder', '~> 2.5'
 # Non-default gems---------------------------------------------------
 gem 'mini_magick', '~> 4.8'
 gem 'foreman'
+gem 'devise'
 
+#gems for exporting to an excel spreadsheet
+gem 'rubyzip', '= 1.0.0'
+gem 'axlsx', '= 2.0.1'
+gem 'axlsx_rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
