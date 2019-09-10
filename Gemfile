@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.2'
+ruby '2.6.3'
 
 gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
 gem 'pg', '>= 0.18', '< 2.0'
@@ -16,11 +16,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'mini_magick', '~> 4.8'
 gem 'foreman'
 gem 'devise'
-
-#gems for exporting to an excel spreadsheet
-gem 'rubyzip', '= 1.0.0'
-gem 'axlsx', '= 2.0.1'
-gem 'axlsx_rails'
+gem 'devise_token_auth'
+gem 'devise-jwt'
+gem 'omniauth'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

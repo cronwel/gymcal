@@ -1,0 +1,47 @@
+                                       Prefix Verb   URI Pattern                                                                                          Controller#Action
+                                 is_signed_in GET    /auth/is_signed_in(.:format)                                                                         auth#is_signed_in?
+                      new_api_v1_user_session GET    /api/v1/users/sign_in(.:format)                                                                      api/v1/sessions#new {:format=>:json}
+                          api_v1_user_session POST   /api/v1/users/sign_in(.:format)                                                                      api/v1/sessions#create {:format=>:json}
+                  destroy_api_v1_user_session DELETE /api/v1/users/sign_out(.:format)                                                                     api/v1/sessions#destroy {:format=>:json}
+                     new_api_v1_user_password GET    /api/v1/users/password/new(.:format)                                                                 api/v1/passwords#new {:format=>:json}
+                    edit_api_v1_user_password GET    /api/v1/users/password/edit(.:format)                                                                api/v1/passwords#edit {:format=>:json}
+                         api_v1_user_password PATCH  /api/v1/users/password(.:format)                                                                     api/v1/passwords#update {:format=>:json}
+                                              PUT    /api/v1/users/password(.:format)                                                                     api/v1/passwords#update {:format=>:json}
+                                              POST   /api/v1/users/password(.:format)                                                                     api/v1/passwords#create {:format=>:json}
+              cancel_api_v1_user_registration GET    /api/v1/users/cancel(.:format)                                                                       api/v1/registrations#cancel {:format=>:json}
+                 new_api_v1_user_registration GET    /api/v1/users/sign_up(.:format)                                                                      api/v1/registrations#new {:format=>:json}
+                edit_api_v1_user_registration GET    /api/v1/users/edit(.:format)                                                                         api/v1/registrations#edit {:format=>:json}
+                     api_v1_user_registration PATCH  /api/v1/users(.:format)                                                                              api/v1/registrations#update {:format=>:json}
+                                              PUT    /api/v1/users(.:format)                                                                              api/v1/registrations#update {:format=>:json}
+                                              DELETE /api/v1/users(.:format)                                                                              api/v1/registrations#destroy {:format=>:json}
+                                              POST   /api/v1/users(.:format)                                                                              api/v1/registrations#create {:format=>:json}
+api_v1_profile_workout_exercise_exercise_sets GET    /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:exercise_id/exercise_sets(.:format)     api/v1/exercise_sets#index {:format=>:json}
+                                              POST   /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:exercise_id/exercise_sets(.:format)     api/v1/exercise_sets#create {:format=>:json}
+ api_v1_profile_workout_exercise_exercise_set GET    /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:exercise_id/exercise_sets/:id(.:format) api/v1/exercise_sets#show {:format=>:json}
+                                              PATCH  /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:exercise_id/exercise_sets/:id(.:format) api/v1/exercise_sets#update {:format=>:json}
+                                              PUT    /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:exercise_id/exercise_sets/:id(.:format) api/v1/exercise_sets#update {:format=>:json}
+                                              DELETE /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:exercise_id/exercise_sets/:id(.:format) api/v1/exercise_sets#destroy {:format=>:json}
+             api_v1_profile_workout_exercises GET    /api/v1/profiles/:profile_id/workouts/:workout_id/exercises(.:format)                                api/v1/exercises#index {:format=>:json}
+                                              POST   /api/v1/profiles/:profile_id/workouts/:workout_id/exercises(.:format)                                api/v1/exercises#create {:format=>:json}
+              api_v1_profile_workout_exercise GET    /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:id(.:format)                            api/v1/exercises#show {:format=>:json}
+                                              PATCH  /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:id(.:format)                            api/v1/exercises#update {:format=>:json}
+                                              PUT    /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:id(.:format)                            api/v1/exercises#update {:format=>:json}
+                                              DELETE /api/v1/profiles/:profile_id/workouts/:workout_id/exercises/:id(.:format)                            api/v1/exercises#destroy {:format=>:json}
+                      api_v1_profile_workouts GET    /api/v1/profiles/:profile_id/workouts(.:format)                                                      api/v1/workouts#index {:format=>:json}
+                                              POST   /api/v1/profiles/:profile_id/workouts(.:format)                                                      api/v1/workouts#create {:format=>:json}
+                       api_v1_profile_workout GET    /api/v1/profiles/:profile_id/workouts/:id(.:format)                                                  api/v1/workouts#show {:format=>:json}
+                                              PATCH  /api/v1/profiles/:profile_id/workouts/:id(.:format)                                                  api/v1/workouts#update {:format=>:json}
+                                              PUT    /api/v1/profiles/:profile_id/workouts/:id(.:format)                                                  api/v1/workouts#update {:format=>:json}
+                                              DELETE /api/v1/profiles/:profile_id/workouts/:id(.:format)                                                  api/v1/workouts#destroy {:format=>:json}
+                              api_v1_profiles GET    /api/v1/profiles(.:format)                                                                           api/v1/profiles#index {:format=>:json}
+                                              POST   /api/v1/profiles(.:format)                                                                           api/v1/profiles#create {:format=>:json}
+                               api_v1_profile GET    /api/v1/profiles/:id(.:format)                                                                       api/v1/profiles#show {:format=>:json}
+                                              PATCH  /api/v1/profiles/:id(.:format)                                                                       api/v1/profiles#update {:format=>:json}
+                                              PUT    /api/v1/profiles/:id(.:format)                                                                       api/v1/profiles#update {:format=>:json}
+                                              DELETE /api/v1/profiles/:id(.:format)                                                                       api/v1/profiles#destroy {:format=>:json}
+                                         root GET    /                                                                                                    profiles#index
+                           rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                                           active_storage/blobs#show
+                    rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format)             active_storage/representations#show
+                           rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                                          active_storage/disk#show
+                    update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                                  active_storage/disk#update
+                         rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                                       active_storage/direct_uploads#create

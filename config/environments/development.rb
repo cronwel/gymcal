@@ -5,9 +5,7 @@ Rails.application.configure do
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
     config.action_controller.perform_caching = true
     config.cache_store = :memory_store
-    config.public_file_server.headers = {
-      'Cache-Control' => "public, max-age=#{2.days.to_i}"
-    }
+    config.public_file_server.headers = { 'Cache-Control' => "public, max-age=#{2.days.to_i}" }
   else
     config.action_controller.perform_caching = false
     config.cache_store = :null_store
@@ -19,7 +17,6 @@ Rails.application.configure do
   config.active_record.migration_error = :page_load
   config.active_record.verbose_query_logs = true
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  # Devise configuration 8/31/19@2:50pm
+  # Devise Setup
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-
 end

@@ -11,11 +11,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile:[]
+      profile:[],
     };
   }
   componentDidMount() {
-    axios.get('api/v1/profile/')
+    axios.get('api/v1/')
       .then((response) => {return response.json()})
       .then((data) => {this.setState({ profile: data }) });
   }
